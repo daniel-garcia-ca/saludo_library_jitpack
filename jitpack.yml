@@ -1,0 +1,6 @@
+
+jdk:
+  - openjdk11
+install:
+  - FILE="-Dfile=kkt-library-saludo-1.0.aar"
+  - mvn install:install-file $FILE -Dpackaging=aar -DpomFile=pom.xml
